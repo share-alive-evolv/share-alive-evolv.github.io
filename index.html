@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+	<script type="text/javascript" src="content/main.js"></script>
+	<style>
+	  html {overflow: auto;} 
+	  html, body, div, iframe {margin: 0px; padding: 0px; height: 100%; border: none;} 
+	  iframe {display: block; width: 100%; border: solid; overflow-y: auto; overflow-x: hidden;}
+
+	  body {
+            background-color : #8325FF;
+            color : white;
+	    margin : 0;
+            overflow : hidden;
+	  }
+	</style>
+  </head>
+
+  <body>
+    <audio src="content/background.ogg" autoplay="true"loop="true" preload="auto" volume="1.0" onloadeddata="waitForLoad()"></audio> 
+    <iframe id="content"  width="100%" height="100%" src="content/waiting.html"/>
+  </body>
+</html>

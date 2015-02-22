@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>:</title>
+    
+    <style>
+      #poem {
+        color : white;
+        float : left;
+        font-size : xx-large;
+        text-shadow: yellow 0px 0px 10px;
+      }
+
+      #next {
+        color : blue;
+        float : right;
+        position : relative;
+        top : 14.8em;
+      
+        font-size : small;
+      }
+
+      #next a {
+        color : blue;
+        border-bottom : solid;
+        border-radius : 3px;
+        border-width : 1px;
+        margin : 0;
+        text-decoration: none;
+      }
+
+      @-webkit-keyframes hinge {
+        0% {
+          -webkit-transform-origin: top left;
+          -webkit-animation-timing-function: ease-in-out;
+        }
+      
+        20%, 60% {
+          -webkit-transform: rotate(80deg);
+          -webkit-transform-origin: top left;
+          -webkit-animation-timing-function: ease-in-out;
+        }
+      
+        40%, 80% {
+          -webkit-transform: rotate(60deg);
+          -webkit-transform-origin: top left;
+          -webkit-animation-timing-function: ease-in-out;
+          opacity: 1;
+        }
+      
+        100% {    
+          -webkit-transform: translate3d(0, 700px, 0);
+          opacity: 0;
+        }
+      }
+
+      #slide4 {
+        position : fixed;
+        top : 35%;
+        left : 30%;
+
+        -webkit-animation-name : hinge;
+        -webkit-animation-duration : 2s;
+        -webkit-animation-iteration-count : infinite;
+        -webkit-animation-play-state : running;
+      }
+
+      #next p {
+        position : fixed;
+        top : 35%;
+        left : 30%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="poem">
+      <p id="slide4">I am anchorless without you</p>
+    </div>
+
+    <div id="next">
+      <a href="5.html">&gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>

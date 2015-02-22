@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>:</title>
+    
+    <style>
+      #poem {
+        color : white;
+        float : left;
+        font-size : xx-large;
+        text-shadow: yellow 0px 0px 10px;
+      }
+      
+      #next {
+        color : blue;
+        float : right;
+        position : relative;
+        top : 13.8em;
+      
+        font-size : small;
+      }
+
+      #next a {
+        color : blue;
+        border-bottom : solid;
+        border-radius : 3px;
+        border-width : 1px;
+        margin : 0;
+        text-decoration: none;
+      }
+      
+      
+      @-webkit-keyframes bounceInRight {
+        0%, 60%, 75%, 90%, 100% {
+          -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+
+        0% {
+          opacity: 0;
+          -webkit-transform: translateX(3000px);
+        }
+
+        60% {
+          opacity: 1;
+          -webkit-transform: translateX(-25px);
+        }
+
+        75% {
+          -webkit-transform: translateX(10px);
+        }
+
+        90% {
+          -webkit-transform: translateX(-5px);
+        }
+
+        100% {
+          -webkit-transform: none;
+        }
+      }
+      
+      #slide2 {
+        position : fixed;
+        top : 35%;
+        left : 22%;
+
+        -webkit-animation-name : bounceInRight;
+        -webkit-animation-duration : 1s;
+        -webkit-animation-iteration-count : 2;
+        -webkit-animation-play-state : running;
+      }
+      
+    </style>
+  </head>
+
+  <body>
+    <div id="poem">
+      <p id="slide2">I Love You Lots</p>
+    </div>
+    
+    <div id="next">
+      <a href="3.html">&gt;&gt;&gt;</a>
+    </div>
+  </body>
+</html>
